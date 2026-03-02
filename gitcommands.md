@@ -34,3 +34,22 @@ git config --global user.email ""
  1490  git push -u origin main
  1491  git status
  1492  history > history.md
+
+#colabarating with friend
+ 1506  cd Documents/
+ 1507  mkdir gitcolab
+ 1508  cd gitcolab/
+ 1509  git clone git@github.com:sumanthbhegdemca/testing-connection.git
+ 1510  git status
+ 1511  ls
+ 1512  ls -a
+ 1513  ls
+ 1514  cd testing-connection/
+ 1515  ls
+ 1516  test.txt
+ 1517  cat test.txt
+ 1518  nano test.txt
+ 1519  git add .
+ 1520  git commit -m "commit by pavan1"
+ 1521  git push -u origin main
+ 1522  history 50
