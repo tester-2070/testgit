@@ -60,3 +60,46 @@ git push -u origin main
  1521  git push -u origin main
  1522  history 50
 
+#simulating merge conflict
+
+1524  git branch -b pavan
+ 1525  git checkout -b pavan
+ 1526  ls
+ 1527  nano test.txt
+ 1528  git add .
+ 1529  git commit -m "pavan branch"
+ 1530  git push -u origin pavan
+ 1531  git checkout main
+ 1532  ls
+ 1533  nano test.txt 
+ 1534  git add .
+ 1535  git commit -m "main 2"
+ 1536  git push
+ 1537  git checkout pavan
+ 1538  git merge pavan
+ 1539  ls
+ 1540  nano test.txt
+ 1541  git merge pavan
+ 1542  git checkout main
+ 1543  ls
+ 1544  nano test.txt 
+ 1545  git checkout pavan
+ 1546  git push -u origin pavan
+ 1547  git merge pavan
+ 1548  git checkout main
+ 1549  git merge pavan
+ 1550  nano test.txt 
+ 1551  git add .
+ 1552  git commit -m "merge conflict:
+"
+ 1553  git push
+ 1554  nano test.txt 
+ 1555  git add .
+ 1556  git commit -m "merge conflict resolved"
+ 1557  git push
+ 1558  git branch -d pavan
+ 1559  git status
+ 1560  git branch
+ 1561  git add .
+ 1562  git commit -m "branch deleted"
+ 1563  git push
